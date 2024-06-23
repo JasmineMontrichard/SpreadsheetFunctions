@@ -5,7 +5,7 @@
 * @param {string} input Text to be filtered.
 */
 
-function calcSweepedNumbers(input) {
+function calcNumsInUnfilteredData(input) {
   // Filter for numbers that fall within brackets '()'
   const regex = /\((\d+)\)/g;
   let match;
