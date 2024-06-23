@@ -5,7 +5,7 @@
 * @author Jasmine Montrichard
 */
 
-function calcDuration(input) {
+function calcNumsInUnfilteredData(input) {
   // Filter for numbers that fall within brackets '()'
   const regex = /\(([\d+\-*/\s]+)\)/g;
   
