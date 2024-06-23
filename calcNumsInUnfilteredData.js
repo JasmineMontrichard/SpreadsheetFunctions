@@ -5,15 +5,21 @@
 * @author Jasmine Montrichard
 */
 
-function calcNumsInUnfilteredData(input) {
+function calcDuration(input) {
   // Filter for numbers that fall within brackets '()'
   const regex = /\(([\d+\-*/\s]+)\)/g;
+  
   let match;
   let total = 0;
 
-  // Iterate over those numbers
-  while ((match = regex.exec(input)) !== null) {
+  // Filters out letters from input
+  input = input.replace(/[a-zA-Z ]+\)/g, ")");
 
+  // If the input contains an expression that ends with an operator, it replaces it with +0) to avoid errors
+  input = input.replace(/[+\-*\/]\s*\)/g, "+0)");
+
+  // Iterates over those numbers
+  while ((match = regex.exec(input)) !== null) {
     // Evaluates the arithmetic expression enclosed in brackets
     let expression = match[1];
     let result = eval(expression);
