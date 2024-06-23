@@ -1,3 +1,10 @@
+/**
+* This function is filters input for numbers, iterates over them, and sums them together before the total sum is returned.
+* - Jasmine Montrichard
+* 
+* @param {string} input Text to be filtered.
+*/
+
 function calcSweepedNumbers(input) {
   // Filter for numbers that fall within brackets '()'
   const regex = /\((\d+)\)/g;
