@@ -1,6 +1,6 @@
 /**
 * This function is filters input for numbers enclosed in brackets, iterates over them, and sums them together before the total sum is returned. In addition,
-* this function evaluates arithmetic expressions for multiple numbers enclosed in brackets.
+* this function evaluates arithmetic expressions including multiple numbers enclosed in brackets.
 *
 * @author Jasmine Montrichard
 */
